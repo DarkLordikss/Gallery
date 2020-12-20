@@ -94,3 +94,6 @@ footer {
     margin-top: 30px;
     text-align: center;
 }
+#createcont {
+    height: 400px; //Временно для вида
+}
