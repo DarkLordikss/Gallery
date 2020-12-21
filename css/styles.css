@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 body {
     background-color: #00FFFF;
@@ -64,13 +65,16 @@ main {
     border-radius: 10px;
     box-shadow: 10px 10px 2px;
     color: #7FFFD4;
-    width: 84%;
+    width: 85%;
     margin: 0 auto;
     margin-top: 50px;
     padding: 10px 10px 10px 10px;
     border-style: solid;
     border-color: white;
     border-width: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .gallery {
@@ -78,11 +82,15 @@ main {
     margin: 5px 5px 5px 5px;
     background-color: #7FFFD4;
     border-radius: 5px;
-    display: inline-block;
+    display: inline-flex;
 }
 .gallery img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+}
+.inf{
+    color: #007375;
+    margin: 5px 5px 5px 5px;
 }
 footer {
     background-color: #00CED1;
@@ -95,5 +103,17 @@ footer {
     text-align: center;
 }
 #createcont {
-    height: 400px; //Временно для вида
+    color: #7FFFD4;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 20px 20px 20px;
+    flex-direction: column;
+}
+.forpost {
+    color: #007375;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+input {
+    color: #007375;
 }
