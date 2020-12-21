@@ -105,9 +105,11 @@ footer {
 #createcont {
     color: #7FFFD4;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px 20px 20px 20px;
     flex-direction: column;
+    width: auto;
 }
 .forpost {
     color: #007375;
@@ -116,4 +118,32 @@ footer {
 }
 input {
     color: #007375;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#imgane {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#ath {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#desk {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#files {
+    position: relative;
+    right: -12%;
 }
