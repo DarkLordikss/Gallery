@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
+    cursor: a;
 }
 body {
     background-color: #00FFFF;
@@ -86,13 +87,13 @@ main {
     background-color: #7FFFD4;
     border-radius: 5px;
     display: inline-flex;
-    -webkit-transition: 2s ease;
-   -moz-transition: 2s ease;
-   -o-transition: 2s ease;
+    -webkit-transition: 1s ease;
+   -moz-transition: 1s ease;
+   -o-transition: 1s ease;
 }
 .gallery:hover {
     background-color: #c973ff;
-    transition: 2s;
+    transition: 1s;
 }
 .gallery img {
     width: 200px;
