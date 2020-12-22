@@ -80,16 +80,26 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 }
+.gallery:nth-child(3n-1) {
+    background-color: #0fe;
+}
+.gallery:nth-child(3n) {
+    background-color: #00ab9f;
+}
 
 .gallery {
     padding: 5px 5px 5px 5px;
     margin: 5px 5px 5px 5px;
-    background-color: #7FFFD4;
+    background-color: #b5fffa;
     border-radius: 5px;
     display: inline-flex;
     -webkit-transition: 1s ease;
    -moz-transition: 1s ease;
    -o-transition: 1s ease;
+   border-color: white;
+   border-width: 2px;
+   border-style: solid;
+
 }
 .gallery:hover {
     background-color: #c973ff;
@@ -102,6 +112,7 @@ main {
 .inf{
     color: #007375;
     margin: 5px 5px 5px 5px;
+    text-shadow: 0px 0px 10px white;
 }
 footer {
     background-color: #00CED1;
