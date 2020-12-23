@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    cursor: a;
+    cursor: auto;
 }
 body {
     background-color: #00FFFF;
@@ -30,6 +30,8 @@ header {
     border-style: solid;
     border-color: white;
     border-width: 3px;
+    font-size: 30px;
+    -webkit-text-stroke: 1px black;
 }
 .umenu {
     width: 100%;
@@ -69,7 +71,7 @@ main {
     border-radius: 10px;
     box-shadow: 10px 10px 2px;
     color: #7FFFD4;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 50px;
     padding: 10px 10px 10px 10px;
@@ -99,6 +101,7 @@ main {
    border-color: white;
    border-width: 2px;
    border-style: solid;
+   font-size: 18px;
 
 }
 .gallery:hover {
@@ -112,7 +115,6 @@ main {
 .inf{
     color: #007375;
     margin: 5px 5px 5px 5px;
-    text-shadow: 0px 0px 10px white;
 }
 footer {
     background-color: #00CED1;
@@ -168,4 +170,12 @@ form {
 #files {
     position: relative;
     right: -12%;
+}
+textarea {
+    color: white;
+    background-color: black;
+    resize: none;
+}
+#name {
+    text-align: center;
 }
