@@ -11,12 +11,32 @@
 	<script type="text/javascript" src="fancybox/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="fancybox/jquery.fancybox-1.2.1.pack.js"></script>
 	<script type="text/javascript" src="js/gal.js"></script>
+	<script type="text/javascript" src="js/post.js"></script>
 </head>
+<div id="postback">
+<div id="post">
+	<div id="cross"><img src = "fancybox\fancy_closebox.png"></div>
+	<div id="createcont">
+		<form action="" method="post">
+			<div id="ath" class="forpost">
+					<h3>Enter your nickname:</h3><textarea required rows="1" cols="30" maxlength="15" id="name" name="a"></textarea>
+			</div>
+			<div id="desk" class="forpost">
+					<h3>Enter description:</h3><textarea required rows="2" cols="30" maxlength="90" name="d"></textarea>
+			</div>
+			<div id="imgane" class="forpost">
+					<h3>Choose the picture</h3><input id="files" accept="image/*" type="file" name="f">
+			</div>
+			<input type="submit" id="but" name="b" value="Post the picture">
+		</form>
+	</div>
+</div>
+</div>
 	<body>
 		<header>
 			<div class="umenu left"><a href="index.html"><div class="fmenu"><p>Main</p></div></a></div>
 			<div class="stick"></div>
-			<div class="umenu"><a href="post.html"><div class="fmenu"><p>Create post</p></div></a></div>
+			<div class="umenu" id="post_button"><!--<a href="post.html">--><div class="fmenu"><p>Create post</p></div></a></div>
 			<div class="stick"></div>
 			<div class="umenu"><a href="menu3.html"><div class="fmenu"><p>And more</p></div></a></div>
 			<div class="stick"></div>
@@ -255,5 +275,6 @@
 				</div>
 			</a>
 		</main>
+	</body>
 		<footer><p>Something intresting about us</p></footer>
 </html>
