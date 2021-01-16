@@ -54,6 +54,13 @@ header {
     height: 20px;
 }
 
+#cross:hover{
+    background-color: #c973ff;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+}
+
 #post {
     position: fixed;
     left: 50%;
