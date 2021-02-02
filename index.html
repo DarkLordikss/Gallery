@@ -7,25 +7,27 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<!--	<script type="text/javascript" src="js/img.js"></script> -->
+	<script type="text/javascript" src="js/post.js"></script>
 	<script type="text/javascript" src="fancybox/jquery-1.3.2.min.js"></script>
 	<script type="text/javascript" src="fancybox/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="fancybox/jquery.fancybox-1.2.1.pack.js"></script>
 	<script type="text/javascript" src="js/gal.js"></script>
-	<script type="text/javascript" src="js/post.js"></script>
 </head>
 <div id="postback">
 <div id="post">
 	<div id="cross"><img src = "fancybox\fancy_closebox.png"></div>
 	<div id="createcont">
-		<form action="" method="post">
+		<form enctype="multipart/form-data" target="_blank" action="http://somnoynadno.ru:3000/new" method="post">
 			<div id="ath" class="forpost">
-					<h3>Enter your nickname:</h3><textarea required rows="1" cols="30" maxlength="15" id="name" name="a"></textarea>
+					<h3>Enter your nickname:</h3><textarea required rows="1" cols="30" maxlength="15" id="name" name="author"></textarea>
 			</div>
 			<div id="desk" class="forpost">
-					<h3>Enter description:</h3><textarea required rows="2" cols="30" maxlength="90" name="d"></textarea>
+					<h3>Enter description:</h3><textarea required rows="2" cols="30" maxlength="90" name="description"></textarea>
 			</div>
 			<div id="imgane" class="forpost">
-					<h3>Choose the picture</h3><input id="files" accept="image/*" type="file" name="f">
+					<h3>Choose the picture</h3><input id="files" accept="image/*" type="file" name="image">
 			</div>
 			<input type="submit" id="but" name="b" value="Post the picture">
 		</form>
@@ -42,238 +44,14 @@
 			<div class="stick"></div>
 			<div class="umenu right"><a href="menu4.html"><div class="fmenu"><p>Last</p></div></a></div>
 		</header>
-		<main>
-			<a class="gallery" rel="group" href="img/7.jpg" title="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"><img src="img/7.jpg">
+		<main id="main">
+			<!--<a class="gallery" rel="group" href="img/7.jpg" title="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"><img src="img/7.jpg">
 				<div class="info">
 					<p class="inf">Author: Dark Lord</p>
 					<p class="inf">Date: 21.12.202</p>
 					<p class="inf">Time: 21:22</p>
 				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/6.jpg" title="Some photo"><img src="img/6.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/4.jpg" title="Some photo"><img src="img/4.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/3.jpg" title="Some photo"><img src="img/3.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/5.jpg" title="Some photo"><img src="img/5.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/1.jpg" title="Some photo"><img src="img/1.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/6.jpg" title="Some photo"><img src="img/6.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/1.jpg" title="Some photo"><img src="img/1.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/1.jpg" title="Some photo"><img src="img/1.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/1.jpg" title="Some photo"><img src="img/1.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/2.jpg" title="Some photo"><img src="img/2.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/7.jpg" title="Some photo"><img src="img/7.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/6.jpg" title="Some photo"><img src="img/6.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/4.jpg" title="Some photo"><img src="img/4.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/3.jpg" title="Some photo"><img src="img/3.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/5.jpg" title="Some photo"><img src="img/5.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/1.jpg" title="Some photo"><img src="img/1.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/6.jpg" title="Some photo"><img src="img/6.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/1.jpg" title="Some photo"><img src="img/1.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/1.jpg" title="Some photo"><img src="img/1.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/1.jpg" title="Some photo"><img src="img/1.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/2.jpg" title="Some photo"><img src="img/2.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/7.jpg" title="Some photo"><img src="img/7.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/6.jpg" title="Some photo"><img src="img/6.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/4.jpg" title="Some photo"><img src="img/4.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/3.jpg" title="Some photo"><img src="img/3.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/5.jpg" title="Some photo"><img src="img/5.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/1.jpg" title="Some photo"><img src="img/1.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/6.jpg" title="Some photo"><img src="img/6.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/1.jpg" title="Some photo"><img src="img/1.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/1.jpg" title="Some photo"><img src="img/1.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/1.jpg" title="Some photo"><img src="img/1.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
-			<a class="gallery" rel="group" href="img/2.jpg" title="Some photo"><img src="img/2.jpg">
-				<div class="info">
-					<p class="inf">Author: Dark Lord</p>
-					<p class="inf">Date: 21.12.202</p>
-					<p class="inf">Time: 21:22</p>
-				</div>
-			</a>
+			</a>-->
 		</main>
 	</body>
 		<footer><p>Something intresting about us</p></footer>
